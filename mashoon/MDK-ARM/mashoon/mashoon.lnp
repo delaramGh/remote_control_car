@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"mashoon\startup_stm32f103xb.o"
+"mashoon\esp8266_test.o"
+"mashoon\main.o"
+"mashoon\stm32f1xx_it.o"
+"mashoon\stm32f1xx_hal_msp.o"
+"mashoon\stm32f1xx_hal_gpio_ex.o"
+"mashoon\stm32f1xx_hal_tim.o"
+"mashoon\stm32f1xx_hal_tim_ex.o"
+"mashoon\stm32f1xx_hal.o"
+"mashoon\stm32f1xx_hal_rcc.o"
+"mashoon\stm32f1xx_hal_rcc_ex.o"
+"mashoon\stm32f1xx_hal_gpio.o"
+"mashoon\stm32f1xx_hal_dma.o"
+"mashoon\stm32f1xx_hal_cortex.o"
+"mashoon\stm32f1xx_hal_pwr.o"
+"mashoon\stm32f1xx_hal_flash.o"
+"mashoon\stm32f1xx_hal_flash_ex.o"
+"mashoon\stm32f1xx_hal_exti.o"
+"mashoon\stm32f1xx_hal_uart.o"
+"mashoon\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "mashoon\mashoon.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "mashoon.map" -o mashoon\mashoon.axf
